@@ -23,26 +23,38 @@
         <jsp:param name="title" value="Please log in" />
     </jsp:include>
 </head>
+<style>
+    .container-fluid {
+        background-image: linear-gradient(#495159, #A1E8CC, #C5DECD, #E5D4C0, #FAC9B8);
+    }
+    .main {
+        margin: 2em;
+        padding: 2em;
+        height: 1000px;
+    }
+</style>
 <body>
 
-<div class="container-fluid" >
+    <div class="container-fluid" >
 
-    <jsp:include page="partials/navbar.jsp" />
-    <hr>
-    <form action="login.jsp" method="POST">
-      <div class="form-group">
-        <label for="username">Username</label>
-        <input id="username" name="username" class="form-control" type="text">
-      </div>
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input id="password" name="password" class="form-control" type="password">
-      </div>
-      <br>
-      <input type="submit" class="btn btn-primary btn-block" value="Sign In">
-    </form>
+        <jsp:include page="partials/navbar.jsp" />
 
-</div>
+        <div class="main">
+            <form action="login.jsp" method="POST">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input id="username" name="username" class="form-control" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" class="form-control" type="password">
+                </div>
+                <br>
+                <input type="submit" class="btn btn-primary btn-block" value="Sign In">
+            </form>
+        </div>
+
+    </div>
 
 </body>
 </html>

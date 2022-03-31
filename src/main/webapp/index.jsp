@@ -13,13 +13,37 @@
         <jsp:param name="title" value="Welcome to my site!" />
     </jsp:include>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inspiration&display=swap" rel="stylesheet">
     <title>Adlister</title>
 </head>
+<style>
+
+    .container-fluid {
+        background-image: linear-gradient(#495159, #A1E8CC, #C5DECD, #E5D4C0, #FAC9B8);
+    }
+    .main {
+        margin: 2em;
+        padding: 2em;
+        height: 1000px;
+    }
+    p {
+        font-family: 'Inspiration', cursive;
+        font-size: 10em;
+    }
+
+</style>
 <body>
 
-    <jsp:include page="partials/navbar.jsp" />
     <div class="container-fluid">
-        <h1>Welcome to the Adlister!</h1>
+
+        <jsp:include page="partials/navbar.jsp" />
+
+        <div class="main">
+            <p>Welcome to the Adlister!</p>
+        </div>
+
     </div>
 </body>
 </html>
