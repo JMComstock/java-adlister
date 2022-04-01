@@ -30,8 +30,8 @@
     }
     .glow {
         font-family: 'Inspiration', cursive;
-        font-size: 10em;
-        color: #ffffff;
+        font-size: 7em;
+        color: #f50505;
         -webkit-animation: glow 1s ease-in-out infinite alternate;
         -moz-animation: glow 1s ease-in-out infinite alternate;
         animation: glow 1s ease-in-out infinite alternate;
