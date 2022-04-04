@@ -11,7 +11,7 @@ public class Album implements Serializable {
     private double sales;
     private String genre;
 
-    public Album () {};
+    public Album () {}
 
     public long getId() {
         return id;

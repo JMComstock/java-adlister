@@ -45,6 +45,5 @@ public class BeanTest {
         for(Quote quote : quoteArrayList) {
             System.out.printf("Quote by %s %s\n \"%s\" \n", quote.getAuthor().getFirst_name(), quote.getAuthor().getLast_name(), quote.getContent());
         }
-
     }
 }

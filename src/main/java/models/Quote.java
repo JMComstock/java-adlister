@@ -8,7 +8,7 @@ public class Quote implements Serializable {
     private Author author;
     private String content;
 
-    public Quote() {};
+    public Quote() {}
 
     public long getId() {
         return id;
