@@ -1,6 +1,5 @@
 package dao;
 
-import java.sql.SQLException;
 
 public class DaoFactory {
     private static Ads adsDao;
